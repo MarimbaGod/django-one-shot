@@ -18,6 +18,15 @@
                         <th>Number of items</th>
                     </tr>
                 </thead>
+                <tbody>
+                    {% for list in todo_list_list %}
+                    <tr>
+                        <td>
+                            <a href="{url 'todo_list_detail' lists.id}">{{ list.name }}
+                        </td>
+                    </tr>
+                    {%endfor%}
+                </tbody>
             </table>
         </div>
     </main>
